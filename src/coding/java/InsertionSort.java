@@ -2,10 +2,7 @@ package coding.java;
 
 class InsertionSort {
 
-	int[] sortingTechnique(int[] insertionSortArray) {
-
-		// Navigates through two sequential integers till the end
-
+	static int[] sortingTechnique(int[] insertionSortArray) {
 		for (int currentEle = 1; currentEle < insertionSortArray.length; ++currentEle) {
 			int key = insertionSortArray[currentEle], loc = currentEle - 1;
 			while (loc >= 0 && key < insertionSortArray[loc]) {
@@ -14,9 +11,7 @@ class InsertionSort {
 			}
 			insertionSortArray[loc + 1] = key;
 		}
-
 		return insertionSortArray;
-
 	}
 
 }

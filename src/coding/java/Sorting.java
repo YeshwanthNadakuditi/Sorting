@@ -7,13 +7,9 @@ import coding.java.InsertionSort;
 public class Sorting {
 
 	public void evaluateSortingAlg(int[] arrayToSort) {
-
 		displayInitialUnsortedArray(arrayToSort);
 		if (arrayToSort.length <= 10) {
-			InsertionSort inSort = new InsertionSort();
-			inSort.sortingTechnique(arrayToSort);
-			displayFinalSortedArray(inSort.sortingTechnique(arrayToSort));
-
+			displayFinalSortedArray(InsertionSort.sortingTechnique(arrayToSort));
 		}
 	}
 
